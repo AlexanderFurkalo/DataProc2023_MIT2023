@@ -1,0 +1,9 @@
+Crud\FileCrud.class
+FileIO\FileIOInterface.class
+servlet\ServletConfigInterface.class
+FileIO\FileIO.class
+Mock\Data.class
+servlet\ServletConfig.class
+Entities\Boots.class
+Crud\CrudInterface.class
+servlet\servlet.class

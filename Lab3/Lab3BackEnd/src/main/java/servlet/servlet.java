@@ -18,7 +18,7 @@ import java.io.PrintWriter;
 
 import java.util.List;
 
-@WebServlet("/servlet")
+@WebServlet("/servlet/*")
 
 public class servlet extends HttpServlet{
     private List<Boots> listd = new Data().getData();

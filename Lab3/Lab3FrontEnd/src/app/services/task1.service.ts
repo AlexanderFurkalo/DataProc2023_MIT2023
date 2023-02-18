@@ -32,7 +32,7 @@ export class Task1Service {
   }
 
   deleteItems(item:Boots):Observable<Boots[]>{
-    return this.http.delete<Boots[]>(this.url+"/"+item.id)
+    return this.http.delete<Boots[]>(this.url+"/"+item.id);
   }
 
 

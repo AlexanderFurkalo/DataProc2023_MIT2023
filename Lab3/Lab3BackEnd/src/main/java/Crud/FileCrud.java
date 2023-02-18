@@ -27,8 +27,8 @@ public class FileCrud implements CrudInterface{
     }
 
     @Override
-    public void updateEntity(Boots entity) {
-        fio.saveToFile(entity);
+    public void updateEntity(Boots entities) {
+        fio.saveToFile(entities);
     }
 
     public JsonElement bodyParse(HttpServletRequest request){

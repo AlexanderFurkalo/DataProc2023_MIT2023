@@ -1,0 +1,25 @@
+<section class="LittleSquare">
+  <h2>{{title}}</h2>
+  <div>
+    <ul class="list">
+        <li *ngFor="let it of itemList" (click)="onSelect(it)">
+            {{it.id}}. {{it.name}}. {{it.size}}. {{it.price}}. {{it.image}}
+            <span (click)="deleteItems(it)">delete</span>
+        </li>
+    </ul>
+  </div>
+</section>
+
+<section class="LittleSquare">
+  <h3 (click)="showAddForm=!showAddForm">Add product (Click to open menu)</h3>
+  <form *ngIf="showAddForm" #form1="ngForm" (ngSubmit)="addItems(form1.value)">
+    <input type="hidden" name="id" ngModel="-1">
+    <input type="text" name="name" ngModel placeholder="Name"><br><br>
+    <input type="number" name="size" ngModel placeholder="Size"><br><br>
+    <input type="number" name="price" ngModel placeholder="Price"><br><br>
+    <input type="text" name="image" ngModel placeholder="Image"><br><br>
+    <input type="submit" value="Add item">
+  </form>
+</section>
+
+<app-update [boots]="selectedItem" (updated)="updateItems()"></app-update>

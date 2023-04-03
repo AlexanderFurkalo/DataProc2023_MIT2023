@@ -1,0 +1,46 @@
+body{
+  background-color: #D3D3D3;
+  margin:0;
+}
+
+h1{
+  background-color: #28a99e;
+  margin-block-start: 0;
+  text-align: center;
+  font-size: 36px;
+  padding-bottom: 5px;
+}
+
+.add{
+  text-decoration: none;
+  background-color: #bebebe;
+  color: #000000;
+  display: block;
+  text-align: center;
+  line-height: 27px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  height: 30px;
+  border-radius: 14px;
+  border: solid 1px;
+}
+
+table{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  padding: 32px;
+}
+
+button{
+  text-decoration: none;
+  border-radius: 14px;
+  border: solid 1px;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+}

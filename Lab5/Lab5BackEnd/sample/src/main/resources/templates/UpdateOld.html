@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <link rel="stylesheet" th:href="@{/css/indexstyle.css}">
+</head>
+<body>
+<div>
+    <h1>Update Item</h1>
+    <br/>
+    <form action="#" th:action="@{/add}" th:object="${boots}" method="post">
+        <table cellpadding="10">
+            <tr>
+                <td>ID:</td>
+                <td><input type="text" th:field="*{id}" readonly="readonly"/></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" th:field="*{name}"/></td>
+            </tr>
+            <tr>
+                <td>Size:</td>
+                <td><input type="text" th:field="*{size}"/></td>
+            </tr>
+            <tr>
+                <td>Price:</td>
+                <td><input type="text" th:field="*{price}"/></td>
+            </tr>
+            <tr>
+                <td>Image:</td>
+                <td><input type="text" th:field="*{image}"/></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Update</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>The Main Page</title>
+    <link rel="stylesheet" th:href="@{/css/indexstyle.css}">
+</head>
+<body>
+<div class="container">
+    <h1>Main Page</h1>
+
+    <a href="add" class="add">Add New Item (Boots)</a>
+
+    <table cellpadding="20">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>To Do</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="boots : ${listItem}">
+            <td th:text="${boots.id}">ID</td>
+            <td th:text="${boots.name}">Name</td>
+            <td th:text="${boots.size}">Size</td>
+            <td th:text="${boots.price}">Price</td>
+            <td><img th:src="${boots.image}" width="150" height="150"/></td>
+            <td>
+                <a th:href="@{/update/{id}(id=${boots.id})}">Update</a>
+                <br/><br/>
+                <a th:href="@{/delete/{id}(id=${boots.id})}">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

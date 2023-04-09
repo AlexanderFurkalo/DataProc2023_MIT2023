@@ -1,0 +1,17 @@
+$main: #BDD99E;
+$background: #476930;
+
+* {
+    margin:0;
+    padding: 0;
+    text-decoration:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background;
+    justify-content: center;
+}

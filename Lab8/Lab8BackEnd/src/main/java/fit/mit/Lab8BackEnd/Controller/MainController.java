@@ -12,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/boots")
 @Slf4j
+@CrossOrigin(origins = "*")
 public class MainController {
     @Autowired
     ItemRepository itemRepository;
